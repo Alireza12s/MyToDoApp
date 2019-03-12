@@ -37,7 +37,14 @@
                             <outlet property="delegate" destination="gsb-Cx-Vsd" id="HDF-PN-9bw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDo" id="GnU-jy-2AL"/>
+                    <navigationItem key="navigationItem" title="ToDo" id="GnU-jy-2AL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NSt-Ue-UDr">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addBarButtonPressed:" destination="gsb-Cx-Vsd" id="JLw-rg-cQH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BK1-4P-M5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
